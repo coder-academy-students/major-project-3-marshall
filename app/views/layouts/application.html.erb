@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DivxDemp2</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+      $( document ).ready(function() {
+        $(".button-collapse").sideNav();
+      });
+
+    </script>
+  </head>
+
+  <body style="background-image: url('/assets/profile-background.png'); background-size: 100%; background-attachment: fixed;;">
+    <%= render 'partials/nav' %>
+    <div class="row" style="">
+
+      <div class="col s3" style="margin-top: 100px;">
+        <div style="margin-left: 20px;">
+          <% if current_page?(root_path) %>
+            <img class="icon-style" src="<%= asset_path 'divx-left-menu-profile-cards.png' %>" alt="" style="max-width: 210px; max-height: 340px;">
+          </div>
+          <div style="margin-left: 50px;">
+            <img class="search-box" src="<%= asset_path 'search-box.png' %>" alt="" style="max-width: 230px;">
+          </div>
+          <% else %>
+          </div>
+          <% end %>
+
+
+      </div>
+
+      <div class="col s8"><%= yield %></div>
+
+    </div>
+
+
+  </body>
+</html>

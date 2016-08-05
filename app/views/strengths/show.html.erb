@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @strength.name %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @strength.icon %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @strength.user %>
+</p>
+
+<%= link_to 'Edit', edit_strength_path(@strength) %> |
+<%= link_to 'Back', strengths_path %>

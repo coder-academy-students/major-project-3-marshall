@@ -1,0 +1,115 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "materialize/components/color";
+ $primary-color: color("blue", "lighten-2") !default;
+ @import 'materialize';
+
+ .trapezoid {
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+   width: 550px;
+   height: 0;
+   border: 50px solid rgba(0,0,0,0);
+   border-bottom: 0 solid;
+   border-top: 100px solid #E0E0E0;
+   font: normal 100%/normal Arial, Helvetica, sans-serif;
+   color: rgba(0,0,0,0);
+   -o-text-overflow: clip;
+   text-overflow: clip;
+ }
+ .inverse-trapezoid {
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+   width: 550px;
+   height: 0;
+   border: 50px solid rgba(0,0,0,0);
+   border-top: 0 solid;
+   border-bottom: 100px solid #E0E0E0;
+   font: normal 100%/normal Arial, Helvetica, sans-serif;
+   color: rgba(0,0,0,0);
+   -o-text-overflow: clip;
+   text-overflow: clip;
+ }
+
+ .mainBox {
+    width: 650px; height: 500px;
+    background: #3EBEAA; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #3EBEAA , #98CD72); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #3EBEAA, #98CD72); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #3EBEAA, #98CD72); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #3EBEAA , #98CD72); /* Standard syntax */;
+
+ }
+
+ .mainBox1 {
+    width: 650px; height: 555px;
+    background: #3EBEAA; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #3EBEAA , #98CD72); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #3EBEAA, #98CD72); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #3EBEAA, #98CD72); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #3EBEAA , #98CD72); /* Standard syntax */;
+
+ }
+
+ .mainBox2 {
+    width: 650px; height: 720px;
+    background: #6937bd; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #6937bd , #996fde); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #6937bd, #996fde); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #6937bd, #996fde); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #6937bd , #996fde); /* Standard syntax */;
+
+ }
+
+ .mainBox3 {
+    width: 650px; height: 770px;
+    background: #6937bd; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #6937bd , #996fde); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #6937bd, #996fde); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #6937bd, #996fde); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #6937bd , #996fde); /* Standard syntax */;
+
+ }
+
+ .video {
+   min-width: 85%;
+   margin-top: -20px;
+   margin-left: 50px;
+   -webkit-box-shadow: 0px 2px 15px 1px rgba(51,51,51,0.38);
+   -moz-box-shadow: 0px 2px 15px 1px rgba(51,51,51,0.38);
+   box-shadow: 0px 2px 15px 1px rgba(51,51,51,0.38);
+ }
+
+.icon-style{
+  height: 450px;
+}
+
+.icon-style2{
+  height: 400px;
+}
+
+.search-box{
+  width: 300px;
+}
+
+.nav-logo{
+  margin-left: 20px;
+  padding-top: 15px;
+  height: 45px;
+}

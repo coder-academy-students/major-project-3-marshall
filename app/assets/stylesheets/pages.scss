@@ -1,0 +1,23 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    background-image: url('/assets/pw_maze_white.png');
+    position: cover;
+
+}
+
+.card-style{
+  margin-bottom: 40px;
+  padding-right: 30px;
+
+  min-height: 260px; max-height: 260px;
+}
+
+.profile-icons{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
